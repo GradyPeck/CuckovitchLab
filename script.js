@@ -22,7 +22,7 @@ for(let i = 0; i < lifeEvents.length; i++){
 let counter = 0;
 let rando = 0;
 while(true){
-    rando = Math.round(Math.random()*10);
+    rando = Math.floor(Math.random()*10 + 1);
     if(rando === 5){
         counter ++;
         console.log(`${rando} === 5. It took ${counter} iterations to randomly generate the number 5.`)
